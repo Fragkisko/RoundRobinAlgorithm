@@ -14,7 +14,7 @@ import java.util.Scanner;
  * @author frag.pel
  */
 public class RoundRobin {
-    public static final int kvanto_xronou=5;
+    public static final int kvanto_xronou=2;
     public static void main(String[] args) {
         int ar_dierg = 10 ;
         Scanner scanner = new Scanner(System.in);
