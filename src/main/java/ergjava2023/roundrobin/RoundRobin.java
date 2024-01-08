@@ -94,16 +94,19 @@ int pinakas[][]=new int[ar_dierg][8];
          System.out.println("min="+minimumInSecondColumn);
          
         
-      for (int j = 0; j < 7; j++) {
-            System.out.println("Queue " + (j + 1) + " elements: ");
-            queues[j].queueDisplay();
-            System.out.println();
-        }
-         
+//      for (int j = 0; j < 7; j++) {
+//            System.out.println("Queue " + (j + 1) + " elements: ");
+//            queues[j].queueDisplay();
+//            System.out.println();
+//        }
+//         
          boolean monomiadiergasia=true;
          int id_mikroterhs_prot;
-         
-        while(oloklhrwsh && xronos<200)
+         int orio_xronou=200;
+         System.out.println("Orise ta ticks gia ton opoio tha trexei o algorithmos xronodromologhshs,\n"
+                 + " mia proteinomeni timh einai to 200.");
+         orio_xronou=scanner.nextInt();
+        while(oloklhrwsh && xronos<orio_xronou)
         {
             System.out.println("\nGia Xrono "+xronos);
             if(xronos>=minimumInSecondColumn)
@@ -150,9 +153,10 @@ int pinakas[][]=new int[ar_dierg][8];
                                      System.out.println("H diergasia me id "+id_mikroterhs_prot+" molis oloklhrwtike.");
                                      if(add_column6(pinakas)==ar_dierg)
                                          oloklhrwsh=false;
+                                    
                                      //queues[i].deleteX(6);
                                 }
-
+                             
                             }
                         }
                 
@@ -168,13 +172,13 @@ int pinakas[][]=new int[ar_dierg][8];
         System.out.println("\nCPU:");;
         running.queueDisplay();
         
-              for (int j = 1; j < 8; j++)
-                {
-                    System.out.println("Queue " + (j) + " elements: ");
-                    queues[j].queueDisplay();
-                    System.out.println();
-                }
-     
+//              for (int j = 1; j < 8; j++)
+//                {
+//                    System.out.println("Queue " + (j) + " elements: ");
+//                    queues[j].queueDisplay();
+//                    System.out.println();
+//                }
+//     
               
               
         double avgrt=0.0;
@@ -212,4 +216,6 @@ int pinakas[][]=new int[ar_dierg][8];
         }
         return sum;
     }
+
+   
 }
